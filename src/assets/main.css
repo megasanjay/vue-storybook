@@ -37,3 +37,27 @@ a,
     padding: 0 2rem;
   }
 }
+
+.sb-show-main {
+  @apply bg-transparent font-sans;
+}
+
+.sbdocs.sbdocs-content > * {
+  @apply !font-sans !text-slate-700;
+}
+
+.story-content > h1 {
+  @apply text-3xl !font-semibold !text-slate-700 pb-4;
+}
+
+.story-content > h2 {
+  @apply text-2xl !font-semibold !text-slate-700 pb-4;
+}
+
+.story-content > p {
+  @apply text-base !pb-4;
+}
+
+.story-content > hr {
+  @apply border-t-2 !border-slate-200 !mt-4 mb-8;
+}
