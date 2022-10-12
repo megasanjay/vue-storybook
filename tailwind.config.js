@@ -40,4 +40,9 @@ module.exports = {
     },
   },
   plugins: [require("@tailwindcss/typography")],
+  safelist: [
+    {
+      pattern: /(border)-(primary|secondary)-(50|[0-9]+)/,
+    },
+  ],
 };

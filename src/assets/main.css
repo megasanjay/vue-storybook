@@ -46,11 +46,17 @@ a,
   @apply !font-sans !text-slate-700;
 }
 
+.story-content {
+  @apply text-slate-700 w-full;
+  @apply max-w-5xl mx-auto;
+}
+
 .story-content > h1 {
   @apply text-3xl !font-semibold !text-slate-700 pb-4;
 }
 
-.story-content > h2 {
+.story-content > h2,
+.story-content > div > h2 {
   @apply text-2xl !font-semibold !text-slate-700 pb-4;
 }
 

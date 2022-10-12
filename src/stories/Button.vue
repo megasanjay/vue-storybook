@@ -2,7 +2,12 @@
   <button type="button" :class="classes" @click="onClick" :style="style">
     {{ label }}
   </button>
+  <n-button>naive-ui</n-button>
 </template>
+
+<script setup>
+import { NButton } from "naive-ui";
+</script>
 
 <script>
 import "./button.css";

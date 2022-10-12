@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "jsx": "preserve",
-    "allowJs": true
+    "allowJs": true,
+    "types": ["naive-ui/volar"]
   },
   "files": [],
   "references": [
