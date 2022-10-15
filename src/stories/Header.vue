@@ -56,12 +56,12 @@
 
 <script>
 import "./header.css";
-import MyButton from "./Button.vue";
+import AppButton from "../components/buttons/AppButton.vue";
 
 export default {
   name: "my-header",
 
-  components: { MyButton },
+  components: { AppButton },
 
   props: {
     user: {

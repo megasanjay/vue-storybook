@@ -6,12 +6,30 @@
 </template>
 
 <script setup>
-import { NButton } from "naive-ui";
+const props = defineProps({
+  label: {
+    type: String,
+    required: true,
+  },
+  primary: {
+    type: Boolean,
+    default: false,
+  },
+  size: {
+    type: String,
+    default: "medium",
+  },
+  onClick: {
+    type: Function,
+    default: () => {},
+  },
+});
 </script>
 
 <script>
 import "./button.css";
-import { reactive, computed } from "vue";
+
+import { computed, reactive } from "vue";
 
 export default {
   name: "my-button",
