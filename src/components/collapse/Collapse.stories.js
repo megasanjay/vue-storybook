@@ -1,14 +1,14 @@
+import { html } from "code-tag";
 import { NCollapse, NCollapseItem } from "naive-ui";
 
 export default {
   title: "Components/Collapse",
   component: NCollapse,
   argTypes: {
-    size: {
+    "arrow-placement": {
       control: { type: "select" },
-      options: ["small", "medium", "large", "huge"],
+      options: ["right", "left"],
     },
-    hoverable: { control: { type: "boolean" } },
   },
 };
 
@@ -17,17 +17,17 @@ const BasicTemplate = (args) => ({
   setup() {
     return { args };
   },
-  template: `<n-collapse>
-  <n-collapse-item title="First" name="1">
-    <div>good</div>
-  </n-collapse-item>
-  <n-collapse-item title="Second" name="2">
-    <div>nice</div>
-  </n-collapse-item>
-  <n-collapse-item title="Third" name="3">
-    <div>very good</div>
-  </n-collapse-item>
-</n-collapse>`,
+  template: html`<n-collapse>
+    <n-collapse-item title="First" name="1">
+      <div>good</div>
+    </n-collapse-item>
+    <n-collapse-item title="Second" name="2">
+      <div>nice</div>
+    </n-collapse-item>
+    <n-collapse-item title="Third" name="3">
+      <div>very good</div>
+    </n-collapse-item>
+  </n-collapse>`,
 });
 
 export const Basic = BasicTemplate.bind({});
@@ -38,18 +38,41 @@ const AccordionTemplate = (args) => ({
   setup() {
     return { args };
   },
-  template: `<n-collapse accordion default-expanded-names="1">
-  <n-collapse-item title="First" name="1">
-    <div>good</div>
-  </n-collapse-item>
-  <n-collapse-item title="Second" name="2">
-    <div>nice</div>
-  </n-collapse-item>
-  <n-collapse-item title="Third" name="3">
-    <div>very good</div>
-  </n-collapse-item>
-</n-collapse>`,
+  template: html`<n-collapse accordion default-expanded-names="1">
+    <n-collapse-item title="First" name="1">
+      <div>good</div>
+    </n-collapse-item>
+    <n-collapse-item title="Second" name="2">
+      <div>nice</div>
+    </n-collapse-item>
+    <n-collapse-item title="Third" name="3">
+      <div>very good</div>
+    </n-collapse-item>
+  </n-collapse>`,
 });
 
 export const Accordion = AccordionTemplate.bind({});
 Accordion.args = {};
+
+const ArrowPlacementTemplate = (args) => ({
+  components: { NCollapse, NCollapseItem },
+  setup() {
+    return { args };
+  },
+  template: html`<n-collapse>
+    <n-collapse-item title="First" name="1">
+      <div>good</div>
+    </n-collapse-item>
+    <n-collapse-item title="Second" name="2">
+      <div>nice</div>
+    </n-collapse-item>
+    <n-collapse-item title="Third" name="3">
+      <div>very good</div>
+    </n-collapse-item>
+  </n-collapse>`,
+});
+
+export const ArrowPlacement = ArrowPlacementTemplate.bind({});
+ArrowPlacement.args = {
+  "arrow-placement": "right",
+};

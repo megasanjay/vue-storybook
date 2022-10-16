@@ -5,7 +5,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 // eslint-disable-next-line no-undef
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx,mdx}"],
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx,mdx,stories.js}"],
   theme: {
     extend: {
       fontFamily: {

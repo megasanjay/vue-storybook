@@ -4626,6 +4626,11 @@ clsx@^1.0.4:
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
   integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
 
+code-tag@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/code-tag/-/code-tag-1.1.0.tgz#8dc979c2bd2e2ac44d5a799abd07953e39cadf3d"
+  integrity sha512-qqvyRC9Fmnqy/1nK2Jz6FIk6F24nliVIVtQFg0r7PuZCZHfWO/c7eZHVlPxFKRSnOSIUUf/jrF1FG8j67FinPg==
+
 collapse-white-space@^1.0.2:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/collapse-white-space/-/collapse-white-space-1.0.6.tgz#e63629c0016665792060dbbeb79c42239d2c5287"
