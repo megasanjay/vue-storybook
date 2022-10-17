@@ -32,7 +32,7 @@ const TypeTemplate = (args) => ({
   setup() {
     return { args };
   },
-  template: '<n-button v-bind="args">{{args.type}}</>',
+  template: '<n-button v-bind="args">{{args.type}}</n-button>',
 });
 
 export const Type = TypeTemplate.bind({});
@@ -43,7 +43,7 @@ const SecondaryTemplate = (args) => ({
   setup() {
     return { args };
   },
-  template: '<n-button v-bind="args" secondary>{{args.type}}</>',
+  template: '<n-button v-bind="args" secondary>{{args.type}}</n-button>',
 });
 
 export const Secondary = SecondaryTemplate.bind({});
@@ -56,7 +56,7 @@ const TertiaryTemplate = (args) => ({
   setup() {
     return { args };
   },
-  template: '<n-button v-bind="args" tertiary>{{args.type}}</>',
+  template: '<n-button v-bind="args" tertiary>{{args.type}}</n-button>',
 });
 
 export const Tertiary = TertiaryTemplate.bind({});
@@ -69,7 +69,7 @@ const GhostTemplate = (args) => ({
   setup() {
     return { args };
   },
-  template: '<n-button v-bind="args" ghost>{{args.type}}</>',
+  template: '<n-button v-bind="args" ghost>{{args.type}}</n-button>',
 });
 
 export const Ghost = GhostTemplate.bind({});
@@ -82,7 +82,7 @@ const DashedTemplate = (args) => ({
   setup() {
     return { args };
   },
-  template: '<n-button v-bind="args" dashed>{{args.type}}</>',
+  template: '<n-button v-bind="args" dashed>{{args.type}}</n-button>',
 });
 
 export const Dashed = DashedTemplate.bind({});
@@ -95,7 +95,7 @@ const SizeTemplate = (args) => ({
   setup() {
     return { args };
   },
-  template: '<n-button v-bind="args">{{args.size}}</>',
+  template: '<n-button v-bind="args">{{args.size}}</n-button>',
 });
 
 export const Size = SizeTemplate.bind({});
