@@ -1,0 +1,131 @@
+import { Meta, Preview, Story } from "@storybook/addon-docs";
+import { NButton } from "naive-ui";
+import { html } from "code-tag";
+
+<Meta
+  title="Components/Button MDX"
+  component={NButton}
+  argTypes={{
+    type: {
+      control: { type: "select" },
+      options: [
+        "default",
+        "primary",
+        "tertiary",
+        "info",
+        "success",
+        "warning",
+        "error",
+      ],
+    },
+    size: {
+      control: { type: "select" },
+      options: ["tiny", "small", "medium", "large"],
+    },
+    disabled: { control: { type: "boolean" } },
+    loading: { control: { type: "boolean" } },
+    circle: { control: { type: "boolean" } },
+    round: { control: { type: "boolean" } },
+  }}
+/>
+
+# Primary Buttons
+
+Our buttons should follow a specific type for each purpose. The primary button is used for the main action of the page.
+
+export const PrimaryTemplate = (args) => ({
+  components: { NButton },
+  setup() {
+    return { args };
+  },
+  template: html`<n-button v-bind="args">{{args.type}}</n-button>`,
+});
+
+<Story name="Primary" args={{ type: "default" }}>
+  {PrimaryTemplate.bind({})}
+</Story>
+
+# Secondary Buttons
+
+Use secondary buttons for less important actions.
+
+export const SecondaryTemplate = (args) => ({
+  components: { NButton },
+  setup() {
+    return { args };
+  },
+  template: html`<n-button v-bind="args" secondary>{{args.type}}</n-button>`,
+});
+
+<Story name="Secondary" args={{ type: "default" }}>
+  {SecondaryTemplate.bind({})}
+</Story>
+
+# Tertiary Buttons
+
+Use tertiary buttons for less important actions.
+
+export const TertiaryTemplate = (args) => ({
+  components: { NButton },
+  setup() {
+    return { args };
+  },
+  template: html`<n-button v-bind="args" tertiary>{{args.type}}</n-button>`,
+});
+
+<Story name="Tertiary" args={{ type: "default" }}>
+  {TertiaryTemplate.bind({})}
+</Story>
+
+# Ghost Buttons
+
+Use ghost buttons for less important actions.
+
+export const GhostTemplate = (args) => ({
+  components: { NButton },
+  setup() {
+    return { args };
+  },
+  template: html`<n-button v-bind="args" ghost>{{args.type}}</n-button>`,
+});
+
+<Story name="Ghost" args={{ type: "default" }}>
+  {GhostTemplate.bind({})}
+</Story>
+
+# Dashed Buttons
+
+Use dashed buttons for less important actions.
+
+export const DashedTemplate = (args) => ({
+  components: { NButton },
+  setup() {
+    return { args };
+  },
+  template: html`<n-button v-bind="args" dashed>{{args.type}}</n-button>`,
+});
+
+<Story name="Dashed" args={{ type: "default" }}>
+  {DashedTemplate.bind({})}
+</Story>
+
+# Button sizes
+
+export const SizesTemplate = (args) => ({
+  components: { NButton },
+  setup() {
+    return { args };
+  },
+  template: html`
+    <div class="flex justify-start items-center space-x-2">
+      <n-button v-bind="args" size="tiny">Tiny</n-button>
+      <n-button v-bind="args" size="small">Small</n-button>
+      <n-button v-bind="args" size="medium">Medium</n-button>
+      <n-button v-bind="args" size="large">Large</n-button>
+    </div>
+  `,
+});
+
+<Story name="Sizes" args={{ type: "primary" }}>
+  {SizesTemplate.bind({})}
+</Story>
