@@ -12,7 +12,7 @@ export default {
   },
 };
 
-const TypeTemplate = (args) => ({
+const TitleTemplate = (args) => ({
   components: { NCard },
   setup() {
     return { args };
@@ -20,8 +20,8 @@ const TypeTemplate = (args) => ({
   template: '<n-card v-bind="args">Card Content</n-card>',
 });
 
-export const Type = TypeTemplate.bind({});
-Type.args = { title: "Card" };
+export const Title = TitleTemplate.bind({});
+Title.args = { title: "Card" };
 
 const SizeTemplate = (args) => ({
   components: { NCard },

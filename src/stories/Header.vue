@@ -56,6 +56,7 @@
 
 <script>
 import "./header.css";
+
 import AppButton from "../components/buttons/AppButton.vue";
 
 export default {

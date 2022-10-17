@@ -5,27 +5,6 @@
   <n-button>naive-ui</n-button>
 </template>
 
-<script setup>
-const props = defineProps({
-  label: {
-    type: String,
-    required: true,
-  },
-  primary: {
-    type: Boolean,
-    default: false,
-  },
-  size: {
-    type: String,
-    default: "medium",
-  },
-  onClick: {
-    type: Function,
-    default: () => {},
-  },
-});
-</script>
-
 <script>
 import "./button.css";
 
