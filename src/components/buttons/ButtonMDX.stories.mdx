@@ -111,6 +111,10 @@ export const DashedTemplate = (args) => ({
 
 # Button sizes
 
+When using buttons, you can choose from 4 different sizes. The default size is medium. The size of the button is determined by the height of the button. The width of the button is determined by the content.
+
+Use the appropriate size for the context. For example, use a large button for a page header, and use a small button for a form.
+
 export const SizesTemplate = (args) => ({
   components: { NButton },
   setup() {
@@ -118,10 +122,10 @@ export const SizesTemplate = (args) => ({
   },
   template: html`
     <div class="flex justify-start items-center space-x-2">
-      <n-button v-bind="args" size="tiny">Tiny</n-button>
-      <n-button v-bind="args" size="small">Small</n-button>
-      <n-button v-bind="args" size="medium">Medium</n-button>
       <n-button v-bind="args" size="large">Large</n-button>
+      <n-button v-bind="args" size="medium">Medium</n-button>
+      <n-button v-bind="args" size="small">Small</n-button>
+      <n-button v-bind="args" size="tiny">Tiny</n-button>
     </div>
   `,
 });
