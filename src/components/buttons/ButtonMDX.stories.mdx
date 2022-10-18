@@ -1,5 +1,5 @@
-import { Meta, Preview, Story } from "@storybook/addon-docs";
-import { NButton } from "naive-ui";
+import { Meta, Canvas, Story } from "@storybook/addon-docs";
+import { NButton, NSpace, NDivider } from "naive-ui";
 import { html } from "code-tag";
 
 <Meta
@@ -29,94 +29,188 @@ import { html } from "code-tag";
   }}
 />
 
-# Primary Buttons
+# Style
+
+Buttons allow users to trigger an action or event with a single click. For example, you can use a button for allowing the functionality of submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+
+<Canvas>
+  <Story name="Overview">
+    {() => {
+      return {
+        components: { NButton },
+        template: html`<n-button type="primary">Button</n-button>`,
+      };
+    }}
+  </Story>
+</Canvas>
+
+## Primary Buttons
 
 Our buttons should follow a specific type for each purpose. The primary button is used for the main action of the page.
 
 export const PrimaryTemplate = (args) => ({
-  components: { NButton },
+  components: { NButton, NSpace, NDivider },
   setup() {
     return { args };
   },
-  template: html`<n-button v-bind="args">{{args.type}}</n-button>`,
+  template: html`<div>
+    <n-button v-bind="args">{{args.type}}</n-button>
+    <n-divider></n-divider>
+    <n-space>
+      <n-button type="default"> Default </n-button>
+      <n-button type="tertiary"> Tertiary </n-button>
+      <n-button type="primary"> Primary </n-button>
+      <n-button type="info"> Info </n-button>
+      <n-button type="success"> Success </n-button>
+      <n-button type="warning"> Warning </n-button>
+      <n-button type="error"> Error </n-button>
+    </n-space>
+  </div> `,
 });
 
-<Story name="Primary" args={{ type: "default" }}>
-  {PrimaryTemplate.bind({})}
-</Story>
+<Canvas>
+  <Story name="Primary" args={{ type: "default" }}>
+    {PrimaryTemplate.bind({})}
+  </Story>
+</Canvas>
 
-# Secondary Buttons
+## Secondary Buttons
 
 Use secondary buttons for less important actions.
 
 export const SecondaryTemplate = (args) => ({
-  components: { NButton },
+  components: { NButton, NSpace, NDivider },
   setup() {
     return { args };
   },
-  template: html`<n-button v-bind="args" secondary>{{args.type}}</n-button>`,
+  template: html`<div>
+    <n-button v-bind="args" secondary>{{args.type}}</n-button>
+    <n-divider></n-divider>
+    <n-space>
+      <n-button secondary> Default </n-button>
+      <n-button secondary type="tertiary"> Tertiary </n-button>
+      <n-button secondary type="primary"> Primary </n-button>
+      <n-button secondary type="info"> Info </n-button>
+      <n-button secondary type="success"> Success </n-button>
+      <n-button secondary type="warning"> Warning </n-button>
+      <n-button secondary type="error"> Error </n-button>
+      <n-button secondary round> Default </n-button>
+      <n-button secondary round type="primary"> Primary </n-button>
+      <n-button secondary round type="info"> Info </n-button>
+      <n-button secondary round type="success"> Success </n-button>
+      <n-button secondary round type="warning"> Warning </n-button>
+      <n-button secondary round type="error"> Error </n-button>
+    </n-space>
+  </div>`,
 });
 
-<Story name="Secondary" args={{ type: "default" }}>
-  {SecondaryTemplate.bind({})}
-</Story>
+<Canvas>
+  <Story name="Secondary" args={{ type: "default" }}>
+    {SecondaryTemplate.bind({})}
+  </Story>
+</Canvas>
 
-# Tertiary Buttons
+## Tertiary Buttons
 
 Use tertiary buttons for less important actions.
 
 export const TertiaryTemplate = (args) => ({
-  components: { NButton },
+  components: { NButton, NSpace, NDivider },
   setup() {
     return { args };
   },
-  template: html`<n-button v-bind="args" tertiary>{{args.type}}</n-button>`,
+  template: html`<div>
+    <n-button v-bind="args" tertiary>{{args.type}}</n-button>
+    <n-divider></n-divider>
+    <n-space>
+      <n-button tertiary> Default </n-button>
+      <n-button tertiary type="primary"> Primary </n-button>
+      <n-button tertiary type="info"> Info </n-button>
+      <n-button tertiary type="success"> Success </n-button>
+      <n-button tertiary type="warning"> Warning </n-button>
+      <n-button tertiary type="error"> Error </n-button>
+      <n-button tertiary round> Default </n-button>
+      <n-button tertiary round type="primary"> Primary </n-button>
+      <n-button tertiary round type="info"> Info </n-button>
+      <n-button tertiary round type="success"> Success </n-button>
+      <n-button tertiary round type="warning"> Warning </n-button>
+      <n-button tertiary round type="error"> Error </n-button>
+    </n-space>
+  </div>`,
 });
 
-<Story name="Tertiary" args={{ type: "default" }}>
-  {TertiaryTemplate.bind({})}
-</Story>
+<Canvas>
+  <Story name="Tertiary" args={{ type: "default" }}>
+    {TertiaryTemplate.bind({})}
+  </Story>
+</Canvas>
 
-# Ghost Buttons
+## Ghost Buttons
 
 Use ghost buttons for less important actions.
 
 export const GhostTemplate = (args) => ({
-  components: { NButton },
+  components: { NButton, NSpace, NDivider },
   setup() {
     return { args };
   },
-  template: html`<n-button v-bind="args" ghost>{{args.type}}</n-button>`,
+  template: html`<div>
+    <n-button v-bind="args" ghost>{{args.type}}</n-button>
+    <n-divider></n-divider>
+    <n-space>
+      <n-button ghost> Default </n-button>
+      <n-button type="primary" ghost> Primary </n-button>
+      <n-button type="info" ghost> Info </n-button>
+      <n-button type="success" ghost> Success </n-button>
+      <n-button type="warning" ghost> Warning </n-button>
+      <n-button type="error" ghost> Error </n-button>
+    </n-space>
+  </div>`,
 });
 
-<Story name="Ghost" args={{ type: "default" }}>
-  {GhostTemplate.bind({})}
-</Story>
+<Canvas>
+  <Story name="Ghost" args={{ type: "default" }}>
+    {GhostTemplate.bind({})}
+  </Story>
+</Canvas>
 
-# Dashed Buttons
+## Dashed Buttons
 
 Use dashed buttons for less important actions.
 
 export const DashedTemplate = (args) => ({
-  components: { NButton },
+  components: { NButton, NSpace, NDivider },
   setup() {
     return { args };
   },
-  template: html`<n-button v-bind="args" dashed>{{args.type}}</n-button>`,
+  template: html`<div>
+    <n-button v-bind="args" dashed>{{args.type}}</n-button>
+    <n-divider></n-divider>
+    <n-space>
+      <n-button dashed> Default </n-button>
+      <n-button type="primary" dashed> Primary </n-button>
+      <n-button type="info" dashed> Info </n-button>
+      <n-button type="success" dashed> Success </n-button>
+      <n-button type="warning" dashed> Warning </n-button>
+      <n-button type="error" dashed> Error </n-button>
+    </n-space>
+  </div>`,
 });
 
-<Story name="Dashed" args={{ type: "default" }}>
-  {DashedTemplate.bind({})}
-</Story>
+<Canvas>
+  <Story name="Dashed" args={{ type: "default" }}>
+    {DashedTemplate.bind({})}
+  </Story>
+</Canvas>
 
-# Button sizes
+# Size
 
 When using buttons, you can choose from 4 different sizes. The default size is medium. The size of the button is determined by the height of the button. The width of the button is determined by the content.
 
 Use the appropriate size for the context. For example, use a large button for a page header, and use a small button for a form.
 
 export const SizesTemplate = (args) => ({
-  components: { NButton },
+  components: { NButton, NSpace, NDivider },
   setup() {
     return { args };
   },
@@ -130,6 +224,8 @@ export const SizesTemplate = (args) => ({
   `,
 });
 
-<Story name="Sizes" args={{ type: "primary" }}>
-  {SizesTemplate.bind({})}
-</Story>
+<Canvas>
+  <Story name="Sizes" args={{ type: "primary" }}>
+    {SizesTemplate.bind({})}
+  </Story>
+</Canvas>
