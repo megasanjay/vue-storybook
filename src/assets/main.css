@@ -75,3 +75,7 @@ a,
 .story-content > hr {
   @apply border-t-2 !border-slate-200 !mt-4 mb-8;
 }
+
+.sbdocs.sbdocs-p > strong {
+  @apply font-bold;
+}

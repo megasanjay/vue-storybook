@@ -11,14 +11,12 @@
     <hr />
 
     <div v-for="item in allSizes" :key="item.label" class="py-4">
-      <h2>{{ item.label }}</h2>
-
       <div class="grid grid-cols-1 gap-4">
         <div v-for="size in item.sizes" :key="size" class="flex flex-col pb-4">
           <span :class="size">
             The quick brown fox jumps over the lazy dog
           </span>
-          <span class="mt-1">{{ size }}</span>
+          <span class="mt-1 text-slate-400">{{ size }}</span>
         </div>
       </div>
     </div>
@@ -28,7 +26,6 @@
 <script setup lang="ts">
 const allSizes = [
   {
-    label: "",
     sizes: [
       "text-xs",
       "text-sm",
