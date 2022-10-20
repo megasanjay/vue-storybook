@@ -1,3 +1,4 @@
+import { html } from "code-tag";
 import { NCarousel } from "naive-ui";
 
 export default {
@@ -15,8 +16,20 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template:
-    '<n-carousel>  <img src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel1.jpeg">   <img src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel2.jpeg">   <img src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel3.jpeg">  <img src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel4.jpeg"></n-carousel>',
+  template: html`<n-carousel>
+    <img
+      src="https://images.unsplash.com/photo-1666126452579-f032d653c7f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1665947676650-dd8b68e4519b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1665944763019-437c1dc48320?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1538577772734-5fe3b8b8df03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80"
+    />
+  </n-carousel>`,
 });
 
 export const Component = Template.bind({});
