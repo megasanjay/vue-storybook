@@ -29,7 +29,9 @@ import { html } from "code-tag";
   }}
 />
 
-# Style
+
+
+# Overview
 
 Buttons allow users to trigger an action or event with a single click. For example, you can use a button for allowing the functionality of submitting a form, opening a dialog, canceling an action, or performing a delete operation.
 
@@ -44,7 +46,18 @@ Buttons allow users to trigger an action or event with a single click. For examp
   </Story>
 </Canvas>
 
-> **There can be more than one button in a screen, but to create the hierarchy of actions we need to use different button styles.**
+
+# Usage
+
+- Buttons may contain icon, on the left or the right side
+- Use 8 px spacing between buttons
+- Replace text with a loader if action is submitted, but still processing
+- Button width is set by it’s content, avoid changing it width
+- Use only one primary button, and any remaining calls to action should be represented as lower emphasis buttons
+
+# Variants
+
+There can be more than one button in a screen, but to create the hierarchy of actions we need to use different button styles.
 
 ## Primary Buttons
 
