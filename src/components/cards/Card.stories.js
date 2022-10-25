@@ -28,8 +28,7 @@ const SizeTemplate = (args) => ({
   setup() {
     return { args };
   },
-  template:
-    '<n-card v-bind="args" :title="`${args.size} Card`">Card Content</n-card>',
+  template: '<n-card v-bind="args" :title="`${args.size} Card`">Card Content</n-card>',
 });
 
 export const Size = SizeTemplate.bind({});

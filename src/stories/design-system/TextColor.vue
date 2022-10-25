@@ -3,9 +3,8 @@
     <h1>Overview</h1>
 
     <p>
-      The consistent use of color in our product keeps cognitive loads low, and
-      makes for a unified and engaging user experience. The colors are designed
-      to be clear and accessible.
+      The consistent use of color in our product keeps cognitive loads low, and makes for a unified
+      and engaging user experience. The colors are designed to be clear and accessible.
     </p>
 
     <hr />
@@ -24,8 +23,8 @@
     <h2 class="pt-8">Tailwind Colors</h2>
 
     <p>
-      The entire Tailwind color palette is also available for use in the app. As
-      we develop more components, we will add them to the design system.
+      The entire Tailwind color palette is also available for use in the app. As we develop more
+      components, we will add them to the design system.
     </p>
   </article>
 </template>

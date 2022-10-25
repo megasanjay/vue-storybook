@@ -1,8 +1,6 @@
 const path = require("path");
 const tailwindConfigPath = path.join(__dirname, "../tailwind.config.js");
-require("storybook-tailwind-foundations/initialize.js").default(
-  tailwindConfigPath
-);
+require("storybook-tailwind-foundations/initialize.js").default(tailwindConfigPath);
 
 module.exports = {
   stories: [

@@ -3,9 +3,9 @@
     <h1>Overview</h1>
 
     <p>
-      Typography works by principle of accessibility before aesthetics.
-      Therefore the text should be readable and help the user understand what’s
-      important by well contrasted size and colors hierarchy.
+      Typography works by principle of accessibility before aesthetics. Therefore the text should be
+      readable and help the user understand what’s important by well contrasted size and colors
+      hierarchy.
     </p>
 
     <hr />
@@ -13,9 +13,7 @@
     <div v-for="item in allSizes" :key="item.label" class="py-4">
       <div class="grid grid-cols-1 gap-4">
         <div v-for="size in item.sizes" :key="size" class="flex flex-col pb-4">
-          <span :class="size">
-            The quick brown fox jumps over the lazy dog
-          </span>
+          <span :class="size"> The quick brown fox jumps over the lazy dog </span>
           <span class="mt-1 text-slate-400">{{ size }}</span>
         </div>
       </div>
