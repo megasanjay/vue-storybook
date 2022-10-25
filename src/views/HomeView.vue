@@ -12,15 +12,15 @@ import { NButton } from "naive-ui";
         :width="200"
       />
     </div>
-    <h1 class="pb-4 text-center text-4xl font-bold text-white">
-      A new platform for sharing FAIR and AI-ready datasets
+    <h1 class="pb-4 text-center text-4xl font-bold">
+      A platform for sharing FAIR and AI-ready datasets
     </h1>
-    <p class="text-xl text-white">Coming soon...</p>
+    <p class="text-xl">Coming soon...</p>
 
     <NDivider class="my-8 w-1/2" />
 
     <a href="https://fairdataihub.org/blog/bridge2AI-fairdataihub" target="_blank">
-      <n-button secondary type="primary" size="large">Learn more...</n-button>
+      <n-button secondary type="primary" size="large">Learn more about fairhub.io...</n-button>
     </a>
   </main>
 </template>
