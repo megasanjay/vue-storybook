@@ -10,7 +10,7 @@ module.exports = {
     "@vue/eslint-config-prettier",
     "plugin:storybook/recommended",
   ],
-  plugins: ["unused-imports", "simple-import-sort"],
+  plugins: ["unused-imports", "simple-import-sort", "prettier"],
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",

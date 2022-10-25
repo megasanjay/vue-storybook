@@ -10,7 +10,7 @@
 
     <hr />
 
-    <div v-for="item in allSizes" :key="item.label" class="py-4">
+    <div v-for="item in allSizes" :key="item.sizes[0]" class="py-4">
       <div class="grid grid-cols-1 gap-4">
         <div v-for="size in item.sizes" :key="size" class="flex flex-col pb-4">
           <span :class="size"> The quick brown fox jumps over the lazy dog </span>
