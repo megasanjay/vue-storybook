@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col py-3 w-max">
+  <div class="flex w-max flex-col py-3">
     <div :class="`h-[80px] w-[250px] ${colorClass}`" />
 
-    <span class="text-sm font-medium w-auto mt-2">{{ colorClass }}</span>
+    <span class="mt-2 w-auto text-sm font-medium">{{ colorClass }}</span>
   </div>
 </template>
 

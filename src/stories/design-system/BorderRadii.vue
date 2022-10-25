@@ -3,9 +3,8 @@
     <h1>Overview</h1>
 
     <p>
-      The consistent use of color in our product keeps cognitive loads low, and
-      makes for a unified and engaging user experience. The colors are designed
-      to be clear and accessible.
+      The consistent use of color in our product keeps cognitive loads low, and makes for a unified
+      and engaging user experience. The colors are designed to be clear and accessible.
     </p>
 
     <hr />
@@ -15,10 +14,10 @@
 
       <div class="grid grid-cols-4 gap-4">
         <div v-for="radius in item.radii" :key="radius" class="flex flex-col">
-          <div class="flex flex-col py-3 w-max">
+          <div class="flex w-max flex-col py-3">
             <div class="h-[150px] w-[150px] bg-primary-200" :class="radius" />
 
-            <span class="text-sm font-medium w-auto mt-2">{{ radius }}</span>
+            <span class="mt-2 w-auto text-sm font-medium">{{ radius }}</span>
           </div>
         </div>
       </div>

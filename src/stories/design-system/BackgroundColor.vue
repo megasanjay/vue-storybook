@@ -3,9 +3,8 @@
     <h1>Overview</h1>
 
     <p>
-      The consistent use of color in our product keeps cognitive loads low, and
-      makes for a unified and engaging user experience. The colors are designed
-      to be clear and accessible.
+      The consistent use of color in our product keeps cognitive loads low, and makes for a unified
+      and engaging user experience. The colors are designed to be clear and accessible.
     </p>
 
     <hr />
@@ -15,10 +14,10 @@
 
       <div class="grid grid-cols-4 gap-4">
         <div v-for="color in item.colors" :key="color" class="flex flex-col">
-          <div class="flex flex-col py-3 w-max">
+          <div class="flex w-max flex-col py-3">
             <div :class="color" class="h-[80px] w-[250px]" />
 
-            <span class="text-sm font-medium w-auto mt-2">{{ color }}</span>
+            <span class="mt-2 w-auto text-sm font-medium">{{ color }}</span>
           </div>
         </div>
       </div>
@@ -27,8 +26,8 @@
     <h2 class="pt-8">Tailwind Colors</h2>
 
     <p>
-      The entire Tailwind color palette is also available for use in the app. As
-      we develop more components, we will add them to the design system.
+      The entire Tailwind color palette is also available for use in the app. As we develop more
+      components, we will add them to the design system.
     </p>
   </article>
 </template>
